@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Mathis Besnier</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./media/images/iconeMB.ico">
+</head>
+
+<body class="has-navbar-fixed-top has-background-light">
+
+    <nav class="navbar is-fixed-top py-3">
+        <div class="navbar-menu">
+            <div class="navbar-brand">
+                <a class="navbar-item icon-gradient" href="#hero" aria-label="Accueil">
+                    <i class="fa-solid fa-house fa-2xl"></i>
+                </a>
+            </div>
+            <div class="navbar-start">
+                <a class="navbar-item button ml-6 mt-2 is-gradient" href="#bio">A propos</a>
+                <a class="navbar-item button ml-3 mt-2 is-gradient" href="#compétences">Compétences</a>
+                <a class="navbar-item button ml-3 mt-2 is-gradient" href="#projets">Projets</a>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-gradient" href="./media/CV_v0.pdf" target="_blank">
+                            <span>Mon CV</span>
+                            <span class="icon"><i class="fas fa-download"></i></span>
+                        </a>
+                        <a class="button is-gradient" href="#contacts">
+                            <span>Contact</span>
+                            <span class="icon"><i class="fas fa-paper-plane"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="columns">
+        <div class="column is-10 is-offset-1 px-6">
+
+            <section class="hero is-fullheight" id="hero">
+                <div class="hero-body">
+                    <div class="container has-text-centered">
+                        <h1 class="title is-1">Mathis Besnier</h1>
+                        <h2 class="subtitle is-size-3 my-6 py-6">Développement Web &bull; Création Numérique</h2>
+                        <p class="subtitle is-size-4 mt-6">En recherche d'alternance dans le développement Web</p>
+                        <a class="button is-gradient" href="#bio">Qui suis-je ?</a>
+                    </div>
+                </div>
+            </section>
+            <hr class="my-6">
+
+            <h2 class="title is-2 is-gradient reveal" id="bio">A propos de moi</h2>
+
+            <div class="fixed-grid has-8-cols">
+                <div class="grid">
+
+                    <div class="cell is-col-span-4 reveal reveal-delay-1">
+                        <article class="card">
+                            <div class="card-content">
+                                <h3 class="title is-3 mb-2">Ma Mini-Bio</h3>
+                                <div class="content">
+                                    <p>Bonjour, je suis Mathis, étudiant en MMI à l'IUT de Lannion en première année.
+                                        Passionné par l'informatique… Ahah ! Vous vous attendiez à une mini bio bateau ?
+                                        Je préfère me présenter à travers un jeu !</p>
+
+                                    <p>Si j'étais un jeu-vidéo, je serais <strong>Clair Obscur : Expédition 33</strong> !
+                                        À la manière de Gustave, je serais très <strong>créatif</strong> et concevrais des projets inventifs,
+                                        j'adore concevoir différentes créations.
+                                        Tout comme Lune, je serais <strong>curieux</strong>, et je découvrirais de nouvelles choses dans l'informatique.
+                                        Enfin, tel leur studio Sandfall, je <strong>développerai des contenus innovants</strong>,
+                                        ou encore des programmes pour différentes problématiques.
+                                        Je plongerai dans des récits fantastiques ou de science-fiction, immergé dans les lectures et les jeux-vidéo.</p>
+
+                                    <p>Vous pensez rêver ? Non, c'est bien moi ! J'aspire à devenir <strong>développeur web full stack</strong>.
+                                        C'est donc ce qui m'amène à rechercher une <strong>alternance dans le développement web</strong> !
+                                        Venez visiter mon portfolio ci-dessous !</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="cell"></div>
+
+                    <div class="cell is-col-span-3 reveal reveal-delay-2">
+                        <div class="card p-4 passion-card">
+                            <h3 class="title is-4 has-text-centered">Passions</h3>
+                            <div class="columns is-centered">
+                                <div class="column is-half">
+                                    <figure class="image m-2 mx-6 mb-4">
+                                        <img src="./media/images/cinema.jpg" alt="Cinéma">
+                                    </figure>
+                                </div>
+                            </div>
+                            <p class="is-size-5 has-text-centered mb-5">Cinéma</p>
+                            <p class="ml-3">Je vais régulièrement au cinéma, j'aime passer du temps à regarder des
+                                films. A tel point que je m'intéresse aussi à la scénarisation, au montage, aux VFX...</p>
+                            <span>
+                                <span class="icon ml-6 mt-4" style="cursor:pointer" id="prev-btn">
+                                    <i class="fa-solid fa-arrow-left fa-xl has-text-primary"></i>
+                                </span>
+                                <span class="icon is-pulled-right mt-4 mr-6" style="cursor:pointer" id="next-btn">
+                                    <i class="fa-solid fa-arrow-right fa-xl has-text-primary"></i>
+                                </span>
+                            </span>
+                        </div>
+
+                        <div class="card p-4 passion-card" hidden>
+                            <h3 class="title is-4 has-text-centered">Passions</h3>
+                            <div class="columns is-centered">
+                                <div class="column is-half">
+                                    <figure class="image m-2 mx-6 mb-4">
+                                        <img src="./media/images/vtt.jpg" alt="VTT">
+                                    </figure>
+                                </div>
+                            </div>
+                            <p class="is-size-5 has-text-centered mb-5">VTT</p>
+                            <p class="ml-3">Je pratique le VTT depuis plus de 5 ans, avant en club, désormais en loisir.
+                                C'est une activité sportive qui me permet de développer des qualités comme la persévérance face aux obstacles...</p>
+                            <span>
+                                <span class="icon ml-6 mt-4" style="cursor:pointer" id="prev-btn">
+                                    <i class="fa-solid fa-arrow-left fa-xl has-text-primary"></i>
+                                </span>
+                                <span class="icon is-pulled-right mt-4 mr-6" style="cursor:pointer" id="next-btn">
+                                    <i class="fa-solid fa-arrow-right fa-xl has-text-primary"></i>
+                                </span>
+                            </span>
+                        </div>
+
+                        <div class="card p-4 passion-card" hidden>
+                            <h3 class="title is-4 has-text-centered">Passions</h3>
+                            <div class="columns is-centered">
+                                <div class="column is-half">
+                                    <figure class="image m-2 mx-6 mb-4">
+                                        <img src="./media/images/livre.jpg" alt="Livre">
+                                    </figure>
+                                </div>
+                            </div>
+                            <p class="is-size-5 has-text-centered mb-5">Lecture</p>
+                            <p class="ml-3">J'aime beaucoup lire des romans fantastiques ou de science-fiction. Tout ce qui me permet d'imaginer des mondes fictifs...</p>
+                            <span>
+                                <span class="icon ml-6 mt-4" style="cursor:pointer" id="prev-btn">
+                                    <i class="fa-solid fa-arrow-left fa-xl has-text-primary"></i>
+                                </span>
+                                <span class="icon is-pulled-right mt-4 mr-6" style="cursor:pointer" id="next-btn">
+                                    <i class="fa-solid fa-arrow-right fa-xl has-text-primary"></i>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <h2 class="title is-2 is-gradient mt-6 reveal">Formations</h2>
+
+            <div class="fixed-grid has-8-cols">
+                <div class="grid">
+
+                    <div class="cell is-col-span-3 reveal reveal-delay-1">
+                        <article class="card">
+                            <div class="card-content">
+                                <div class="mb-3">
+                                    <span class="tag is-dark">2025-2028</span>
+                                </div>
+                                <div class="is-flex is-justify-content-space-between mb-4">
+                                    <figure>
+                                        <img class="image is-48x48"
+                                            src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Logo_IUT_Lannion.svg"
+                                            alt="IUT de Lannion">
+                                    </figure>
+                                    <h3 class="title is-5 mb-0">IUT de Lannion</h3>
+                                    <p class="subtitle is-6 mb-0 has-text-grey">Lannion (22)</p>
+                                </div>
+                                <h3 class="title is-3 mb-2">Métiers du Multimédia et de l'Internet</h3>
+                                <p class="subtitle is-6 has-text-grey mb-4">Bachelor Universitaire de Technologie,
+                                    orienté vers le développement web</p>
+                                <div class="content">Développement web, UX/UI design, graphisme, communication,
+                                    marketing, gestion de projet, audiovisuel</div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="cell">
+                        <div class="is-pulled-right separation-bar"></div>
+                    </div>
+                    <div class="cell"></div>
+
+                    <div class="cell is-col-span-3 reveal reveal-delay-2">
+                        <article class="card">
+                            <div class="card-content">
+                                <div class="mb-3">
+                                    <span class="tag is-dark">2022-2025</span>
+                                </div>
+                                <div class="is-flex is-justify-content-space-between mb-4">
+                                    <figure>
+                                        <img class="image is-48x48"
+                                            src="https://i.hellowork.com/hkE7THAawMWrgXNq2-tkc0vasYexS6C1Uij3DMvfAXk/w:225/h:168/rt:fit/g:sm/bG9jYWw6Ly8vZWR0ZWNoLy9ldGFibGlzc2VtZW50L2xvZ29zLzIwMmFkYmIyLWJhMmYtNGZjYy1hZDg4LWYzYzFhYmM5NTdhNi9sb2dvXzZmNzBkMDEwLWVkNzMtNGU4Mi1hMmU0LWJmMzdlNTJjYmFlYS5zdmc.svg"
+                                            alt="Lycée Réaumur">
+                                    </figure>
+                                    <h3 class="title is-5 mb-0">Lycée Réaumur</h3>
+                                    <p class="subtitle is-6 mb-0 has-text-grey">Laval (53)</p>
+                                </div>
+                                <h3 class="title is-3 mb-2">Baccalauréat général</h3>
+                                <p class="subtitle is-6 has-text-grey mb-4">Spécialité Numérique et Sciences
+                                    Informatiques, Mathématiques et Physique-Chimie</p>
+                                <div class="content">Mathématiques, numérique, club robotique, histoire, géographie,
+                                    français, philosophie...</div>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+
+            <h2 class="title is-2 is-gradient mt-6 reveal" id="compétences">Compétences</h2>
+
+            <div class="columns mt-6">
+
+                <div class="column is-three-fifths reveal reveal-delay-1">
+                    <h3 class="title is-3">Hard-skills</h3>
+                    <section class="box p-0">
+                        <nav class="panel">
+                            <div class="panel-block is-flex is-justify-content-space-between is-clickable accordion-trigger">
+                                <h4 class="title is-5 mb-0">Développement Web</h4>
+                                <figure><i class="fa-solid fa-plus fa-xl has-text-primary"></i></figure>
+                            </div>
+                            <div class="panel-block accordion-content">
+                                <div class="content">
+                                    <p>Compétences en intégration web, du responsive au déploiement.</p>
+                                    <ul>
+                                        <li>Développement Frontend → Intégration responsive, animations et interactions</li>
+                                        <li>Hébergement → Gestion de stockage sur base de données</li>
+                                        <li>Accessibilité : Audits de sites internet</li>
+                                        <li>OUTILS : VS Code, HTML, CSS, Bulma (framework CSS)</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="panel-block is-flex is-justify-content-space-between is-clickable accordion-trigger">
+                                <h4 class="title is-5 mb-0">UI / UX Design</h4>
+                                <figure><i class="fa-solid fa-plus fa-xl has-text-primary"></i></figure>
+                            </div>
+                            <div class="panel-block is-hidden accordion-content">
+                                <div class="content">
+                                    <p>Conception d'interfaces centrées utilisateur, de la recherche au prototype.</p>
+                                    <ul>
+                                        <li>Structuration d'informations : Création de wireframes et de flow</li>
+                                        <li>Prototypes d'interfaces : Recherche d'existants, mockup, création de maquettes</li>
+                                        <li>Audits d'UI/UX : tests et recommandations</li>
+                                        <li>Analyse de parcours d'utilisateur, d'architecture</li>
+                                        <li>OUTIL: Figma</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="panel-block is-flex is-justify-content-space-between is-clickable accordion-trigger">
+                                <h4 class="title is-5 mb-0">Audiovisuel</h4>
+                                <figure><i class="fa-solid fa-plus fa-xl has-text-primary"></i></figure>
+                            </div>
+                            <div class="panel-block is-hidden accordion-content">
+                                <div class="content">
+                                    <p>Maîtrise de la chaîne de production vidéo, du tournage au rendu final.</p>
+                                    <ul>
+                                        <li>Création de scénarios : Réalisation de pitch, de scripts, de synopsis…</li>
+                                        <li>Réalisation de storyboard</li>
+                                        <li>Prises de plans et de sons</li>
+                                        <li>Montage et sound design</li>
+                                        <li>OUTILS : DaVinci Resolve, Audacity</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="panel-block is-flex is-justify-content-space-between is-clickable accordion-trigger">
+                                <h4 class="title is-5 mb-0 mr-4">Gestion de projet & Marketing</h4>
+                                <figure><i class="fa-solid fa-plus fa-xl has-text-primary"></i></figure>
+                            </div>
+                            <div class="panel-block is-hidden accordion-content">
+                                <div class="content">
+                                    <p>Organisation et pilotage de projets de A à Z, de la conception au livrable.</p>
+                                    <ul>
+                                        <li>Création de cahier des charges</li>
+                                        <li>Planifications, jalons, gestion du temps</li>
+                                        <li>Gestion de budget</li>
+                                        <li>OUTILS : Notion, Google Docs, Google Sheets</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="panel-block is-flex is-justify-content-space-between is-clickable accordion-trigger">
+                                <h4 class="title is-5 mb-0">Design graphique</h4>
+                                <figure><i class="fa-solid fa-plus fa-xl has-text-primary"></i></figure>
+                            </div>
+                            <div class="panel-block is-hidden accordion-content">
+                                <div class="content">
+                                    <p>Création d'identités visuelles et de compositions au service du message.</p>
+                                    <ul>
+                                        <li>Veilles graphiques</li>
+                                        <li>Chartes éditoriales, graphiques</li>
+                                        <li>Designs, mise en page</li>
+                                        <li>Compositions graphiques, artistiques</li>
+                                        <li>Communication à travers l'image</li>
+                                        <li>OUTILS : Photoshop, Illustrator, Figma</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </section>
+                </div>
+
+                <div class="column is-auto reveal reveal-delay-2">
+                    <h3 class="title is-3">Soft-skills</h3>
+                    <section class="box mb-6">
+                        <div class="columns is-multiline is-align-items-center">
+                            <div class="column is-one-third has-text-centered"><span class="tag is-medium is-primary">Rigueur</span></div>
+                            <div class="column is-one-third has-text-centered"><span class="tag is-medium is-primary">Logique</span></div>
+                            <div class="column is-one-third has-text-centered"><span class="tag is-medium is-primary">Créativité</span></div>
+                            <div class="column is-one-third has-text-centered"><span class="tag is-medium is-primary">Réflexion</span></div>
+                            <div class="column is-one-third has-text-centered">
+                                <figure class="image is-square mx-auto">
+                                    <img src="./media/images/stars.jpg" alt="Stars">
+                                </figure>
+                            </div>
+                            <div class="column is-one-third has-text-centered"><span class="tag is-medium is-primary">Persévérance</span></div>
+                            <div class="column is-one-third has-text-centered"><span class="tag is-medium is-primary">Ponctualité</span></div>
+                            <div class="column is-one-third has-text-centered"><span class="tag is-medium is-primary">Autonomie</span></div>
+                            <div class="column is-one-third has-text-centered"><span class="tag is-medium is-primary">Organisation</span></div>
+                        </div>
+                    </section>
+
+                    <h3 class="title is-3">Outils</h3>
+                    <section class="box">
+                        <div class="columns">
+                            <div class="column has-text-centered">
+                                <figure class="image is-48x48 mx-auto">
+                                    <img class="icon-accent" src="./media/images/flowbite--html-solid.svg" alt="HTML">
+                                </figure>
+                                <p class="is-size-6">HTML</p>
+                            </div>
+                            <div class="column has-text-centered">
+                                <figure class="image is-48x48 mx-auto">
+                                    <img class="icon-accent" src="./media/images/flowbite--css-solid.svg" alt="CSS">
+                                </figure>
+                                <p class="is-size-6">CSS</p>
+                            </div>
+                            <div class="column has-text-centered">
+                                <figure class="image is-48x48 mx-auto">
+                                    <img class="icon-accent" src="./media/images/cib--js.svg" alt="JavaScript">
+                                </figure>
+                                <p class="is-size-6">JavaScript</p>
+                            </div>
+                        </div>
+                        <div class="columns is-justify-content-space-between">
+                            <div class="column has-text-centered">
+                                <figure class="image is-48x48 mx-auto">
+                                    <img class="icon-accent" src="./media/images/akar-icons--python-fill.svg" alt="Python">
+                                </figure>
+                                <p class="is-size-6">Python</p>
+                            </div>
+                            <div class="column has-text-centered">
+                                <figure class="image is-48x48 mx-auto">
+                                    <img class="icon-accent" src="./media/images/bulma_icon_138839.svg" alt="Bulma">
+                                </figure>
+                                <p class="is-size-6">Bulma</p>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column has-text-centered">
+                                <figure class="image is-48x48 mx-auto">
+                                    <img class="icon-accent" src="./media/images/mage--illustrator.svg" alt="Illustrator">
+                                </figure>
+                                <p class="is-size-6">Illustrator</p>
+                            </div>
+                            <div class="column has-text-centered">
+                                <figure class="image is-48x48 mx-auto">
+                                    <img class="icon-accent" src="./media/images/mage--photoshop.svg" alt="Photoshop">
+                                </figure>
+                                <p class="is-size-6">Photoshop</p>
+                            </div>
+                            <div class="column has-text-centered">
+                                <figure class="image is-48x48 mx-auto">
+                                    <img class="icon-accent" src="./media/images/ri--figma-fill.svg" alt="Figma">
+                                </figure>
+                                <p class="is-size-6">Figma</p>
+                            </div>
+                        </div>
+                        <div class="columns is-justify-content-space-between px-6">
+                            <div class="column has-text-centered">
+                                <figure class="image is-48x48 mx-auto">
+                                    <img class="icon-accent" src="./media/images/simple-icons--davinciresolve.svg" alt="DaVinci">
+                                </figure>
+                                <p class="is-size-6">DaVinci</p>
+                            </div>
+                            <div class="column has-text-centered">
+                                <figure class="image is-48x48 mx-auto">
+                                    <img class="icon-accent" src="./media/images/tdesign--view-gantt-filled.svg" alt="Gantt">
+                                </figure>
+                                <p class="is-size-6">Gantt</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <h2 class="title is-2 is-gradient mt-6 reveal" id="projets">Projets</h2>
+
+            <div class="columns">
+                <div class="column is-half reveal reveal-delay-1">
+                    <div class="card p-4 is-clickable" data-target="project-modal-1">
+                        <figure class="image my-4">
+                            <img src="./media/images/Pokemon_main.png" alt="pokemon illustration">
+                        </figure>
+                        <div class="tags are-small mb-3">
+                            <span class="tag">UI/UX Design</span>
+                            <span class="tag">Workflow</span>
+                            <span class="tag">Intégration</span>
+                        </div>
+                        <h3 class="title is-4">PRODUCTION D'UN SITE WEB</h3>
+                        <p class="is-size-6">Conception et intégration d'un site web complet, de la maquette au déploiement.</p>
+                    </div>
+                </div>
+                <div class="column is-half reveal reveal-delay-2">
+                    <div class="card p-4 is-clickable" data-target="project-modal-2">
+                        <figure class="image my-4">
+                            <img src="./media/images/film_main.png" alt="film illustration">
+                        </figure>
+                        <div class="tags are-small mb-3">
+                            <span class="tag">Sensibilisation</span>
+                            <span class="tag">Montage</span>
+                            <span class="tag">Acting</span>
+                        </div>
+                        <h3 class="title is-4">PRODUCTION D'UN FILM DE SENSIBILISATION</h3>
+                        <p class="is-size-6">Réalisation d'un court-métrage de sensibilisation, de l'écriture au montage final.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns mt-6">
+                <div class="column is-half reveal reveal-delay-1">
+                    <div class="card p-4 is-clickable" data-target="project-modal-3">
+                        <figure class="image is-3by2 my-4">
+                            <img src="./media/images/LogoUrei.png" alt="logo du jeu vidéo Urei">
+                        </figure>
+                        <div class="tags are-small mb-3">
+                            <span class="tag">Développement</span>
+                            <span class="tag">Intégration</span>
+                            <span class="tag">Création</span>
+                        </div>
+                        <h3 class="title is-4">PRODUCTION D'UN JEU VIDEO</h3>
+                        <p class="is-size-6">Développement d'un jeu 2D sur Unity en équipe, mêlant code C#, design et narration.</p>
+                    </div>
+                </div>
+                <div class="column is-half reveal reveal-delay-2">
+                    <div class="card p-4 is-clickable" data-target="project-modal-4">
+                        <figure class="image is-3by2 my-4">
+                            <img src="./media/images/Taquin_physique.jpg" alt="taquin physique illustration">
+                        </figure>
+                        <div class="tags are-small mb-3">
+                            <span class="tag">Recherche de solutions</span>
+                            <span class="tag">Conception</span>
+                            <span class="tag">Compréhension</span>
+                        </div>
+                        <h3 class="title is-4">ROBOT RESOLVEUR DE TAQUIN</h3>
+                        <p class="is-size-6">Conception d'un robot autonome capable de résoudre un taquin grâce à l'algorithme A*.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal" id="project-modal-1">
+                <div class="modal-background"></div>
+                <div class="modal-card is-large">
+                    <header class="modal-card-head">
+                        <p class="modal-card-title">Production d'un site web</p>
+                        <button class="delete" aria-label="close"></button>
+                    </header>
+                    <section class="modal-card-body">
+                        <figure class="image is-16by9 mb-4">
+                            <img src="./media/images/Pokemon_main.png" alt="page catalogue du site pokémon">
+                        </figure>
+                        <article class="message is-dark mb-4">
+                            <div class="message-header"><p>Contexte</p></div>
+                            <div class="message-body">Dans le cadre d'un projet réalisé dans ma formation MMI, j'ai
+                                conçu un site internet capable d'afficher une collection pokémon. L'objectif était de
+                                réaliser une page d'accueil, une page affichant la collection, et des pages de détails
+                                sur chacun des pokémons. Le site devait aussi être hébergé. Mon objectif a donc été de
+                                réaliser une page à la fois intuitive et regroupant les informations nécessaires.
+                            </div>
+                        </article>
+                        <div class="columns is-align-items-flex-start mb-4">
+                            <div class="column is-half">
+                                <article class="message is-dark mb-3">
+                                    <div class="message-header"><p>Missions</p></div>
+                                    <div class="message-body">
+                                        <div class="content">
+                                            <ul>
+                                                <li>Recherche de charte graphique</li>
+                                                <li>Réalisation de wireframe + flow</li>
+                                                <li>Coloration du wireframe (mockup)</li>
+                                                <li>Développement du site en HTML, CSS et Bulma</li>
+                                                <li>Hébergement sur le NAS de l'IUT</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </article>
+                                <figure class="image">
+                                    <img src="./media/images/Pokemon_wireframe.png" alt="site pokémon wireframe">
+                                </figure>
+                            </div>
+                            <div class="column is-half">
+                                <figure class="image mb-3">
+                                    <img src="./media/images/pokemon_index.png" alt="site pokémon menu principal">
+                                </figure>
+                                <article class="message is-dark">
+                                    <div class="message-header"><p>Compétences mobilisées</p></div>
+                                    <div class="message-body">
+                                        <div class="content">
+                                            <ul>
+                                                <li>Conception d'un wireframe et de l'architecture des pages</li>
+                                                <li>Développement Frontend en HTML, CSS et Bulma</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <article class="message is-dark">
+                            <div class="message-header"><p>Bilan perso</p></div>
+                            <div class="message-body">
+                                <div class="content">
+                                    <ul>
+                                        <li>J'ai développé des compétences en design d'UI/UX.</li>
+                                        <li>J'ai aussi amélioré ma compréhension de l'organisation d'une architecture HTML.</li>
+                                        <li>J'ai découvert les limites de certains langages, ce qui m'a poussé à réfléchir à l'utilisation de Javascript pour des projets futurs.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </div>
+
+            <div class="modal" id="project-modal-2">
+                <div class="modal-background"></div>
+                <div class="modal-card is-large">
+                    <header class="modal-card-head">
+                        <p class="modal-card-title">Production d'un film de sensibilisation</p>
+                        <button class="delete" aria-label="close"></button>
+                    </header>
+                    <section class="modal-card-body">
+                        <figure class="image is-16by9 mb-4">
+                            <img src="./media/images/film_main.png" alt="Plan du film de sensibilisation">
+                        </figure>
+                        <article class="message is-dark mb-4">
+                            <div class="message-header"><p>Contexte</p></div>
+                            <div class="message-body">Réalisation d'un film de sensibilisation à 4 dans le cadre d'un
+                                projet au sein de l'IUT. Ce film a pour contrainte de durer 1min 40, de posséder 10
+                                plans maximum et devait être monté pour un rendu dynamique.</div>
+                        </article>
+                        <div class="columns is-align-items-flex-start mb-4">
+                            <div class="column is-half">
+                                <article class="message is-dark mb-3">
+                                    <div class="message-header"><p>Missions</p></div>
+                                    <div class="message-body">
+                                        <div class="content">
+                                            <ul>
+                                                <li>Scénarisation, pitch</li>
+                                                <li>Conception d'un storyboard</li>
+                                                <li>Prise de différents plans</li>
+                                                <li>Réalisation d'un montage</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </article>
+                                <figure class="image is-16by9">
+                                    <img src="./media/images/film_davinci.png" alt="le logiciel de montage DaVinci Resolve">
+                                </figure>
+                            </div>
+                            <div class="column is-half">
+                                <figure class="image mb-3">
+                                    <img src="./media/images/film_canette.png" alt="Plan du film de sensibilisation montrant une canette jetée dans la nature">
+                                </figure>
+                                <article class="message is-dark">
+                                    <div class="message-header"><p>Compétences mobilisées</p></div>
+                                    <div class="message-body">
+                                        <div class="content">
+                                            <ul>
+                                                <li>Réalisation d'un scénario de sensibilisation au jet de déchets</li>
+                                                <li>Planification de l'organisation autour des prises</li>
+                                                <li>Prise des plans en suivant le storyboard</li>
+                                                <li>Joué le rôle d'un personnage du film</li>
+                                                <li>Montage pour un rendu dynamique</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <article class="message is-dark">
+                            <div class="message-header"><p>Bilan perso</p></div>
+                            <div class="message-body">
+                                <div class="content">
+                                    <ul>
+                                        <li>J'ai développé des compétences en organisation.</li>
+                                        <li>J'ai compris l'importance du travail de groupe.</li>
+                                        <li>J'ai maîtrisé les bases du scénario, de la prise son et du montage.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </div>
+
+            <div class="modal" id="project-modal-3">
+                <div class="modal-background"></div>
+                <div class="modal-card is-large">
+                    <header class="modal-card-head">
+                        <p class="modal-card-title">Production d'un jeu vidéo</p>
+                        <button class="delete" aria-label="close"></button>
+                    </header>
+                    <section class="modal-card-body">
+                        <figure class="image mb-4">
+                            <img src="./media/images/LogoUrei.png" alt="logo du jeu vidéo Urei">
+                        </figure>
+                        <article class="message is-dark mb-4">
+                            <div class="message-header"><p>Contexte</p></div>
+                            <div class="message-body">Dans le cadre d'un projet pour le festival A l'West Fest de
+                                Lannion, je réalise un jeu-vidéo en équipe de 4. Ce projet se réalise avec le moteur
+                                Unity, et a pour mission de raconter une histoire du Japon féodal à travers son
+                                gameplay. Je m'occupe principalement de la partie Unity et développement.</div>
+                        </article>
+                        <div class="columns is-align-items-flex-start mb-4">
+                            <div class="column is-half">
+                                <article class="message is-dark mb-3">
+                                    <div class="message-header"><p>Missions</p></div>
+                                    <div class="message-body">
+                                        <div class="content">
+                                            <ul>
+                                                <li>Script pour le lore</li>
+                                                <li>Idéation, direction artistique</li>
+                                                <li>Intégration sur Unity</li>
+                                                <li>Développement en C#</li>
+                                                <li>Lore imagé par animation 2D</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </article>
+                                <figure class="image">
+                                    <img src="./media/images/Samourai-walk.gif" alt="animation du samouraï en marche">
+                                </figure>
+                            </div>
+                            <div class="column is-half">
+                                <figure class="image is-4by3 mb-3">
+                                    <img src="./media/images/Urei_gameplay.gif" alt="animation du gameplay du jeu Urei">
+                                </figure>
+                                <article class="message is-dark">
+                                    <div class="message-header"><p>Compétences mobilisées</p></div>
+                                    <div class="message-body">
+                                        <div class="content">
+                                            <ul>
+                                                <li>Organisation, mise en lumière d'étapes à suivre</li>
+                                                <li>Création d'une direction artistique liée au lore</li>
+                                                <li>Réalisation de sprites et tilemaps</li>
+                                                <li>Intégration dans Unity</li>
+                                                <li>Création d'un monde, déplacements et cinématiques</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <article class="message is-dark">
+                            <div class="message-header"><p>Bilan</p></div>
+                            <div class="message-body">
+                                <div class="content">
+                                    <ul>
+                                        <li>Développer un projet concret et voir son avancée visuellement est très motivant.</li>
+                                        <li>Découverte d'un nouveau langage et de son utilisation.</li>
+                                        <li>Réunion de domaines en un seul (animation, design, développement).</li>
+                                        <li>Projet réalisé en travail d'équipe avec feedbacks très importants.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </div>
+
+            <div class="modal" id="project-modal-4">
+                <div class="modal-background"></div>
+                <div class="modal-card is-large">
+                    <header class="modal-card-head">
+                        <p class="modal-card-title">Robot résolveur de taquin</p>
+                        <button class="delete" aria-label="close"></button>
+                    </header>
+                    <section class="modal-card-body">
+                        <figure class="image mb-4">
+                            <img src="./media/images/Taquin_physique.jpg" alt="taquin physique illustration">
+                        </figure>
+                        <article class="message is-dark mb-4">
+                            <div class="message-header"><p>Contexte</p></div>
+                            <div class="message-body">J'ai mené un projet innovant avec 3 camarades dans le cadre de la
+                                9ème édition de Roborave53 de Craon. Le fil directeur que nous avons suivi était de
+                                réaliser un robot capable de résoudre un jeu de taquin de la manière la plus efficace
+                                possible. Nous avons développé un programme ainsi que modélisé / imprimé en 3D notre
+                                projet. Je me suis personnellement plus penché sur l'aspect développement.</div>
+                        </article>
+                        <div class="columns is-align-items-flex-start mb-4">
+                            <div class="column is-half">
+                                <article class="message is-dark mb-3">
+                                    <div class="message-header"><p>Missions</p></div>
+                                    <div class="message-body">
+                                        <div class="content">
+                                            <ul>
+                                                <li>Virtualisation du jeu</li>
+                                                <li>Résolution avec l'algorithme A*</li>
+                                                <li>Réalisation du jeu en bois</li>
+                                                <li>Relier le bras robotique et le code</li>
+                                                <li>Résolution du jeu avec le bras</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </article>
+                                <figure class="image mt-3">
+                                    <img src="./media/images/Taquin_interface.png" alt="interface de résolution du taquin sur ordinateur">
+                                </figure>
+                            </div>
+                            <div class="column is-half">
+                                <figure class="image mb-3">
+                                    <img src="./media/images/Taquin_code.png" alt="code de résolution du taquin">
+                                </figure>
+                                <article class="message is-dark">
+                                    <div class="message-header"><p>Compétences mobilisées</p></div>
+                                    <div class="message-body">
+                                        <div class="content">
+                                            <ul>
+                                                <li>Recherche d'objectifs, de solutions</li>
+                                                <li>Modélisation du jeu de taquin en Python</li>
+                                                <li>Utilisation de l'algorithme A*</li>
+                                                <li>Recherche de matériaux adaptés</li>
+                                                <li>Conception du robot à l'aide d'une imprimante 3D</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <article class="message is-dark">
+                            <div class="message-header"><p>Bilan perso</p></div>
+                            <div class="message-body">
+                                <div class="content">
+                                    <ul>
+                                        <li>Se lancer dans un projet nécessite une préparation antérieure importante.</li>
+                                        <li>Découverte et utilisation d'algorithme de développement backend.</li>
+                                        <li>L'organisation d'un programme partagé est très importante.</li>
+                                        <li>Prendre du recul et la persévérance est la clé.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </div>
+
+            <section class="box py-5 reveal" id="contacts">
+                <div class="content has-text-centered">
+                    <p><strong>Mathis BESNIER</strong> • Étudiant MMI 2026</p>
+                    <div class="mt-4">
+                        <a href="https://www.linkedin.com/in/mathis-besnier-b6a244387/" class="has-text-primary" target="_blank">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                        <a href="https://github.com/Zerglub11" class="has-text-primary" target="_blank">
+                            <i class="fab fa-github fa-lg mx-2"></i>
+                        </a>
+                        <a href="mailto:besniermathis53@gmail.com" class="has-text-primary" target="_blank">
+                            <i class="fas fa-envelope fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./script.js"></script>
+
+</body>
+
+</html>
