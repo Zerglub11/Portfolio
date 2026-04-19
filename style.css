@@ -23,7 +23,7 @@ body::before {
   height: 600px;
   top: -160px;
   left: -160px;
-  background: #8B5CF6;
+  background: #3b82f6;
   opacity: 0.15;
 }
 
@@ -32,17 +32,17 @@ body::after {
   height: 500px;
   bottom: -120px;
   right: -120px;
-  background: #ffc832;
+  background: #a1d9ec;
   opacity: 0.15;
 }
 
-:root {
-  --c1: #8B5CF6;
-  --c2: #ffc832;
+:root { 
+  --c1: #4a7deb;
+  --c2: #1d4ed8;
   --grad: linear-gradient(135deg, var(--c1) 0%, var(--c2) 100%);
   --grad-text: linear-gradient(120deg, var(--c1) 10%, var(--c2) 100%);
-  --shadow-accent: rgba(139, 92, 246, 0.18);
-  --bulma-primary: #8B5CF6;
+  --shadow-accent: rgba(37, 99, 235, 0.18);
+  --bulma-primary: #1d4ed8;
   --bulma-primary-invert: #ffffff;
 }
 
@@ -50,7 +50,7 @@ body::after {
   background: rgba(255, 255, 255, 0.82) !important;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 4px 24px rgba(139, 92, 246, 0.08);
+  box-shadow: 0 4px 24px rgba(37, 99, 235, 0.08);
   position: relative;
 }
 
@@ -139,16 +139,16 @@ body::after {
 }
 
 .accordion-trigger:hover {
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.06) 0%, rgba(255, 200, 50, 0.06) 100%);
+  background: linear-gradient(135deg, rgba(110, 92, 246, 0.06) 0%, rgba(134, 160, 236, 0.06) 100%);
 }
 
 .icon-accent {
-  filter: invert(44%) sepia(72%) saturate(600%) hue-rotate(225deg) brightness(100%) contrast(95%);
+  filter: invert(35%) sepia(95%) saturate(500%) hue-rotate(190deg) brightness(95%) contrast(95%);
   transition: filter 0.2s ease, transform 0.2s ease;
 }
 
 .icon-accent:hover {
-  filter: invert(44%) sepia(72%) saturate(800%) hue-rotate(225deg) brightness(105%) contrast(95%);
+  filter: invert(35%) sepia(95%) saturate(700%) hue-rotate(190deg) brightness(100%) contrast(95%);
   transform: scale(1.12);
 }
 
