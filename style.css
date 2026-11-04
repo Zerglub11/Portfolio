@@ -54,6 +54,76 @@ body::after {
   position: relative;
 }
 
+.language-switch {
+  position: absolute;
+  top: 50%;
+  right: 1.25rem;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 4.5rem;
+  height: 2rem;
+  padding: 0;
+  border: 1px solid rgba(37, 99, 235, 0.2);
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.08);
+  color: #64748b;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  transform: translateY(-50%);
+  transition: box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.language-switch::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 2.1rem;
+  height: 1.5rem;
+  border-radius: 999px;
+  background: var(--grad);
+  box-shadow: 0 2px 6px var(--shadow-accent);
+  transition: transform 0.2s ease;
+}
+
+.language-switch span {
+  position: relative;
+  z-index: 1;
+  width: 50%;
+  text-align: center;
+  transition: color 0.2s ease;
+}
+
+.language-switch[aria-pressed="false"] span:first-child,
+.language-switch[aria-pressed="true"] span:last-child {
+  color: #fff;
+}
+
+.language-switch[aria-pressed="true"]::before {
+  transform: translateX(2.1rem);
+}
+
+.language-switch:hover {
+  background: rgba(37, 99, 235, 0.13);
+  box-shadow: 0 3px 12px var(--shadow-accent);
+}
+
+.language-switch:focus-visible {
+  outline: 2px solid var(--c1);
+  outline-offset: 3px;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar-menu {
+    padding-right: 6rem;
+  }
+}
+
 .navbar::after {
   content: "";
   position: absolute;
